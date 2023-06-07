@@ -1,6 +1,14 @@
 .navbar-brand{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .nav-item{
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'Oswald', sans-serif;
+}
+.news-articles{
+    margin:4%; 
+}
+.card-title{
+    margin:2%;
+    font-family: 'Playfair', sans-serif;
+    font-style:italic;
 }
