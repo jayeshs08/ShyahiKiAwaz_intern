@@ -7,82 +7,81 @@
     <title>Shyahi Ki Awaz</title>
 
     <!-- LINKING EXTERNAL STYLE SHEET, JS FILE -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <!--ADDING FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Caveat:wght@500&family=Roboto+Mono:ital,wght@0,300;1,500&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <!--Navbar using bootstrap-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar sticky-top bg-danger navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#">SHYAHI KI AWAZ</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">HOME</a>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">HOME</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">LATEST NEWS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">WEATHER</a>
+              <a class="nav-link" href="#">ABOUT US</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 CATEGORIES
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">National</a>
-                <a class="dropdown-item" href="#">International</a>
-                <a class="dropdown-item" href="#">Politics</a>
-                <a class="dropdown-item" href="#">Bollywood</a>
-                <a class="dropdown-item" href="#">Hollywood</a>
-                <a class="dropdown-item" href="#">Entertainment</a>
-              </div>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">NATIONAL</a></li>
+                <li><a class="dropdown-item" href="#">INTERNATIONAL</a></li>
+                <li><a class="dropdown-item" href="#">POLITICS</a></li>
+                <li><a class="dropdown-item" href="#">ENTERTAINMENT</a></li>
+              </ul>
             </li>
           </ul>
         </div>
+      </div>
     </nav>
 
     <!--Carousel for latest news-->
     <div id="carouselfornews" class="carousel slide">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselfornews" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselfornews" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselfornews" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="images/computer.jpg" class="d-block w-100" alt="image">
             <div class="carousel-caption d-none d-md-block">
               <h5>Latest News 1</h5>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="images/mobile.jpg" class="d-block w-100" alt="image">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
+              <h5>Latest news 2</h5>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="images/web.jpg" class="d-block w-100" alt="image">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
+              <h5>Latest news 3</h5>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselfornews" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselfornews" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -93,61 +92,61 @@
         <div class="row">
             <div class="col-sm-6 mb-3 mb-sm-0">
               <div class="card text-bg-dark">
-                <img src="" class="card-img-top" alt="..">
+                <img src="images/news1.jpg" class="card-img-top" height="300px" alt="..">
                 <div class="card-body">
-                  <h5 class="card-title">News 1</h5>
-                  <p class="card-text">Heading of news 1.</p>
-                  <a href="#" class="btn btn-info">Read More!</a>
+                  <h5 class="card-title">Heatwave</h5>
+                  <p class="card-text">Heatwave warning issued in various states of north India ...</p>
+                  <a href="#" class="btn readbtn">Read More!</a>
                 </div>
               </div>
             </div>
             <div class="col-sm-6 mb-3 mb-sm-0">
               <div class="card text-bg-dark">
-                <img src="" class="card-img-top" alt="..">
+                <img src="images/news2.png" class="card-img-top" height="300px" alt="..">
                 <div class="card-body">
-                  <h5 class="card-title">News 2</h5>
-                  <p class="card-text">Heading of news 2.</p>
-                  <a href="#" class="btn btn-info">Read More!</a>
+                  <h5 class="card-title">Odisha Train Tragedy</h5>
+                  <p class="card-text">A huge number of dead are still unclaimed ....</p>
+                  <a href="#" class="btn readbtn">Read More!</a>
                 </div>
               </div>
             </div>
             <div class="col-sm-6 mb-3 mb-sm-0">
                 <div class="card text-bg-dark">
-                    <img src="" class="card-img-top" alt="..">
+                    <img src="images/news1.jpg" class="card-img-top" height="300px" alt="..">
                   <div class="card-body">
-                    <h5 class="card-title">News 3</h5>
-                    <p class="card-text">Heading of news 3.</p>
-                    <a href="#" class="btn btn-info">Read More!</a>
+                    <h5 class="card-title">Dramatic drop in tech hiring</h5>
+                    <p class="card-text">Recession hit the tech industry hard, a lot of employees are facing ...</p>
+                    <a href="#" class="btn readbtn">Read More!</a>
                   </div>
                 </div>
               </div>
               <div class="col-sm-6 mb-3 mb-sm-0">
                 <div class="card text-bg-dark">
-                    <img src="" class="card-img-top" alt="..">
+                    <img src="images/news2.png" class="card-img-top" height="300px" alt="..">
                   <div class="card-body">
-                    <h5 class="card-title">News 4</h5>
-                    <p class="card-text">Heading of news 4.</p>
-                    <a href="#" class="btn btn-info">Read More!</a>
+                    <h5 class="card-title">Crop burning</h5>
+                    <p class="card-text">Indian scientists develop 'capsules' to curb crop burning ...</p>
+                    <a href="#" class="btn readbtn">Read More!</a>
                   </div>
                 </div>
               </div>
               <div class="col-sm-6 mb-3 mb-sm-0">
                 <div class="card text-bg-dark">
-                    <img src="" class="card-img-top" alt="..">
+                    <img src="images/news1.jpg" class="card-img-top" height="300px" alt="..">
                   <div class="card-body">
-                    <h5 class="card-title">News 5</h5>
-                    <p class="card-text">Heading of news 5.</p>
-                    <a href="#" class="btn btn-info">Read More!</a>
+                    <h5 class="card-title">Kerala man wins lottery</h5>
+                    <p class="card-text">A Keralaman wins lottery 1 hour after selling house due to debt ...</p>
+                    <a href="#" class="btn readbtn">Read More!</a>
                   </div>
                 </div>
               </div>
               <div class="col-sm-6 mb-3 mb-sm-0">
                 <div class="card text-bg-dark">
-                    <img src="" class="card-img-top" alt="..">
+                    <img src="images/news2.png" class="card-img-top" height="300px" alt="..">
                   <div class="card-body">
-                    <h5 class="card-title">News 6</h5>
-                    <p class="card-text">Heading of news 6.</p>
-                    <a href="#" class="btn btn-info">Read More!</a>
+                    <h5 class="card-title">Board results</h5>
+                    <p class="card-text">4 tribal girls clear boards in this remote village of Odisha ...</p>
+                    <a href="#" class="btn readbtn">Read More!</a>
                   </div>
                 </div>
               </div>
@@ -155,12 +154,22 @@
           </div>
     </div>
 
+    <!--footer-->
+    <footer>
+      <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Shyahi Ki Awaz © 2023</p>
+    </footer>
     
     
 
       <!--FOR BOOTSTRAP-->
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
